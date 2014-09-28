@@ -121,8 +121,15 @@ int main (int argc, char **argv)
 	/************FIN DE VALIDACIÓN DE ARGUMENTOS***********/
 	/******************************************************/
 
+	int n,i,iteraciones;
+	float final;
 	n = atoi(nvalue);
 	i = atoi(ivalue);
+	for (iteraciones = 0;iteraciones <i;iteraciones++)
+	{
+		final = ln(n);
+	}
+	printf("ln(%i) = %f\n",n,final);
 	
 
 	return 0;
