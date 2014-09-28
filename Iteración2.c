@@ -22,9 +22,9 @@ Ayudante:
 #include <getopt.h>
 
 //CONSTANTES
-#define F0 1 			      /*1/1*/
+#define F0 1 		/*1/1*/
 #define F1 0.333333333 	/*1/3*/
-#define F2 0.2			    /*1/5*/
+#define F2 0.2		/*1/5*/
 #define F3 0.142857143	/*1/7*/
 #define F4 0.111111111	/*1/9*/
 #define F5 0.090909091	/*1/11*/
@@ -50,17 +50,17 @@ float ln(int numero)
 	float c = a/b;
 	float c2 = c*c;
 	resultado = 2*(F0*c + 	
-				F1 *c*c2 + 
-				F2 *c*c2*c2 + 
-				F3 *c*c2*c2*c2 + 
-				F4 *c*c2*c2*c2*c2 + 
-				F5 *c*c2*c2*c2*c2*c2 + 
-				F6 *c*c2*c2*c2*c2*c2*c2 + 
-				F7 *c*c2*c2*c2*c2*c2*c2*c2 + 
-				F8 *c*c2*c2*c2*c2*c2*c2*c2*c2 + 
-				F9 *c*c2*c2*c2*c2*c2*c2*c2*c2*c2 + 
-			    F10*c*c2*c2*c2*c2*c2*c2*c2*c2*c2*c2 + 
-				F11*c*c2*c2*c2*c2*c2*c2*c2*c2*c2*c2*c2);
+		F1 *c*c2 + 
+		F2 *c*c2*c2 + 
+		F3 *c*c2*c2*c2 + 
+		F4 *c*c2*c2*c2*c2 + 
+		F5 *c*c2*c2*c2*c2*c2 + 
+		F6 *c*c2*c2*c2*c2*c2*c2 + 
+		F7 *c*c2*c2*c2*c2*c2*c2*c2 + 
+		F8 *c*c2*c2*c2*c2*c2*c2*c2*c2 + 
+		F9 *c*c2*c2*c2*c2*c2*c2*c2*c2*c2 + 
+		F10*c*c2*c2*c2*c2*c2*c2*c2*c2*c2*c2 + 
+		F11*c*c2*c2*c2*c2*c2*c2*c2*c2*c2*c2*c2);
 	return resultado; 
 }
 
