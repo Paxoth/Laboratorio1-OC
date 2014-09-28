@@ -22,9 +22,9 @@ Ayudante:
 #include <getopt.h>
 
 //Constantes
-#define F0 1 			      /*1/1*/
+#define F0 1 		/*1/1*/
 #define F1 0.333333333 	/*1/3*/
-#define F2 0.2			    /*1/5*/
+#define F2 0.2		/*1/5*/
 #define F3 0.142857143	/*1/7*/
 #define F4 0.111111111	/*1/9*/
 #define F5 0.090909091	/*1/11*/
@@ -50,18 +50,18 @@ float ln(int numero)
 	float b = (numero+1);
 	float c = a/b;
 	resultado = 2*(
-				F0*c + 	
-				F1*c*c*c + 
-				F2*c*c*c*c*c + 
-				F3*c*c*c*c*c*c*c + 
-				F4*c*c*c*c*c*c*c*c*c + 
-				F5*c*c*c*c*c*c*c*c*c*c*c + 
-				F6*c*c*c*c*c*c*c*c*c*c*c*c*c + 
-				F7*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c + 
-				F8*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c + 
-				F9*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c + 
-				F10*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c + 
-				F11*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c);
+		F0*c + 	
+		F1*c*c*c + 
+		F2*c*c*c*c*c + 
+		F3*c*c*c*c*c*c*c + 
+		F4*c*c*c*c*c*c*c*c*c + 
+		F5*c*c*c*c*c*c*c*c*c*c*c + 
+		F6*c*c*c*c*c*c*c*c*c*c*c*c*c + 
+		F7*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c + 
+		F8*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c + 
+		F9*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c + 
+		F10*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c + 
+		F11*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c*c);
 	return resultado; 
 }
 
@@ -72,10 +72,6 @@ int main (int argc, char **argv)
 	int iflag=0;
 	char* ivalue =NULL;
 	char* nvalue =NULL;
-	/*int index;
-	int opterr, optopt,optind;
-	int getopt (int argc, char *const *argv, const char *options);
-	char *optarg;*/
 
 	/******************INICIO FUNCION GETOPT******************/
 	int c;
