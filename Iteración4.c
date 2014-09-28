@@ -22,9 +22,9 @@ Ayudante:
 #include <getopt.h>
 
 //Constantes
-#define F0 1 			/*1/1*/
+#define F0 1 		/*1/1*/
 #define F1 0.333333333 	/*1/3*/
-#define F2 0.2			/*1/5*/
+#define F2 0.2		/*1/5*/
 #define F3 0.142857143	/*1/7*/
 #define F4 0.111111111	/*1/9*/
 #define F5 0.090909091	/*1/11*/
@@ -34,6 +34,7 @@ Ayudante:
 #define F9 0.052631579	/*1/19*/
 #define F10 0.047619048	/*1/21*/
 #define F11 0.043478261	/*1/23*/
+
 /************************TAYLOR************************/
 /*Parametros.
 	numero: valor que se calculará el logaritmo natural Ln(n)
@@ -51,18 +52,18 @@ float ln(int numero)
 	float c3 = c2*c;
 	float c4 = c2*c2;
 	resultado = 2*(
-				F0 *c + 	
-				F1 *c3 + 
-				F2 *c4*c + 
-				F3 *c4*c3 + 
-				F4 *c4*c4*c + 
-				F5 *c4*c4*c2 + 
-				F6 *c4*c4*c4*c + 
-				F7 *c4*c4*c4*c3 + 
-				F8 *c4*c4*c4*c4*c + 
-				F9 *c4*c4*c4*c4*c3 + 
-			    F10*c4*c4*c4*c4*c4*c + 
-				F11*c4*c4*c4*c4*c4*c3);
+		F0 *c + 	
+		F1 *c3 + 
+		F2 *c4*c + 
+		F3 *c4*c3 + 
+		F4 *c4*c4*c + 
+		F5 *c4*c4*c2 + 
+		F6 *c4*c4*c4*c + 
+		F7 *c4*c4*c4*c3 + 
+		F8 *c4*c4*c4*c4*c + 
+		F9 *c4*c4*c4*c4*c3 + 
+		F10*c4*c4*c4*c4*c4*c + 
+		F11*c4*c4*c4*c4*c4*c3);
 	return resultado; 
 }
 
@@ -73,10 +74,6 @@ int main (int argc, char **argv)
 	int iflag=0;
 	char* ivalue =NULL;
 	char* nvalue =NULL;
-	/*int index;
-	int opterr, optopt,optind;
-	int getopt (int argc, char *const *argv, const char *options);
-	char *optarg;*/
 
 	/******************INICIO FUNCION GETOPT******************/
 	int c;
@@ -106,6 +103,7 @@ int main (int argc, char **argv)
 				
 		}
 	/******************FIN FUNCION GETOPT******************/
+	
 	/******************************************************/
 	/***************VALIDACIÓN DE ARGUMENTOS***************/
 	if(iflag==1&&ivalue[0]=='-'&&nflag==0)
