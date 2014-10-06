@@ -5,7 +5,7 @@ Departamento de Ingeniería Informática
 Ingeniería Civil Informática
 Organización de Computadores - Laboratorio 1
 Autores:
-	Nicolás Macarena Henriquez Sepúlveda
+	Nicole Macarena Henriquez Sepúlveda
 	Maximiliano Felipe Andrés Pérez Ródríguez
 Profesores:
 	Nicolás Andrés Hidalgo Castillo
@@ -22,9 +22,9 @@ Ayudante:
 #include <getopt.h>
 
 //COnstantes
-#define F0 1 			/*1/1*/
+#define F0 1 		/*1/1*/
 #define F1 0.333333333 	/*1/3*/
-#define F2 0.2			/*1/5*/
+#define F2 0.2		/*1/5*/
 #define F3 0.142857143	/*1/7*/
 #define F4 0.111111111	/*1/9*/
 #define F5 0.090909091	/*1/11*/
@@ -52,7 +52,6 @@ float ln(int numero)
 	float c4 = c2*c2;
 	float c5 = c3*c2;
 	float c6 = c4*c2;
-	//printf("%f/%f = %f\n",a,b,c);
 	resultado = 2*(
 				F0 *c + 	
 				F1 *c3 + 
@@ -64,9 +63,8 @@ float ln(int numero)
 				F7 *c6*c6*c3 + 
 				F8 *c6*c6*c5 +  
 				F9 *c6*c6*c6*c+  
-			    F10*c6*c6*c6*c3+  
+			    	F10*c6*c6*c6*c3+  
 				F11*c6*c6*c6*c5);
-	//printf("resultado %f\n",resultado);
 	return resultado; 
 }
 
@@ -77,10 +75,6 @@ int main (int argc, char **argv)
 	int iflag=0;
 	char* ivalue =NULL;
 	char* nvalue =NULL;
-	/*int index;
-	int opterr, optopt,optind;
-	int getopt (int argc, char *const *argv, const char *options);
-	char *optarg;*/
 
 	/******************INICIO FUNCION GETOPT******************/
 	int c;
@@ -123,7 +117,6 @@ int main (int argc, char **argv)
 		abort();
 	}
 
-	printf ("nflag = %d, nvalue = %s\niflag = %d, ivalue = %s\n", nflag,nvalue,iflag,ivalue);
 	/************FIN DE VALIDACIÓN DE ARGUMENTOS***********/
 	/******************************************************/
 
