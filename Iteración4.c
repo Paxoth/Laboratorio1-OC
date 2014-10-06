@@ -117,7 +117,6 @@ int main (int argc, char **argv)
 		abort();
 	}
 
-	printf ("nflag = %d, nvalue = %s\niflag = %d, ivalue = %s\n", nflag,nvalue,iflag,ivalue);
 	/************FIN DE VALIDACIÓN DE ARGUMENTOS***********/
 	/******************************************************/
 
